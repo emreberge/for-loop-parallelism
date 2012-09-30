@@ -23,6 +23,9 @@
 		C3453E421618F00A00401EAB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3453E1D1618F00900401EAB /* Foundation.framework */; };
 		C3453E4A1618F00A00401EAB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C3453E481618F00A00401EAB /* InfoPlist.strings */; };
 		C3453E4D1618F00A00401EAB /* Parallelism_DemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C3453E4C1618F00A00401EAB /* Parallelism_DemoTests.m */; };
+		C3453E5A1618F54D00401EAB /* wordsBig in Resources */ = {isa = PBXBuildFile; fileRef = C3453E571618F54D00401EAB /* wordsBig */; };
+		C3453E5B1618F54D00401EAB /* wordsMedium in Resources */ = {isa = PBXBuildFile; fileRef = C3453E581618F54D00401EAB /* wordsMedium */; };
+		C3453E5C1618F54D00401EAB /* wordsSmall in Resources */ = {isa = PBXBuildFile; fileRef = C3453E591618F54D00401EAB /* wordsSmall */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +61,9 @@
 		C3453E491618F00A00401EAB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C3453E4B1618F00A00401EAB /* Parallelism_DemoTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Parallelism_DemoTests.h; sourceTree = "<group>"; };
 		C3453E4C1618F00A00401EAB /* Parallelism_DemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Parallelism_DemoTests.m; sourceTree = "<group>"; };
+		C3453E571618F54D00401EAB /* wordsBig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = wordsBig; sourceTree = "<group>"; };
+		C3453E581618F54D00401EAB /* wordsMedium */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = wordsMedium; sourceTree = "<group>"; };
+		C3453E591618F54D00401EAB /* wordsSmall */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = wordsSmall; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +128,7 @@
 				C3453E331618F00A00401EAB /* MainStoryboard.storyboard */,
 				C3453E361618F00A00401EAB /* ViewController.h */,
 				C3453E371618F00A00401EAB /* ViewController.m */,
+				C3453E561618F53C00401EAB /* input */,
 				C3453E221618F00900401EAB /* Supporting Files */,
 			);
 			path = "Parallelism-Demo";
@@ -158,6 +165,16 @@
 				C3453E481618F00A00401EAB /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C3453E561618F53C00401EAB /* input */ = {
+			isa = PBXGroup;
+			children = (
+				C3453E571618F54D00401EAB /* wordsBig */,
+				C3453E581618F54D00401EAB /* wordsMedium */,
+				C3453E591618F54D00401EAB /* wordsSmall */,
+			);
+			name = input;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,6 +252,9 @@
 				C3453E301618F00A00401EAB /* Default@2x.png in Resources */,
 				C3453E321618F00A00401EAB /* Default-568h@2x.png in Resources */,
 				C3453E351618F00A00401EAB /* MainStoryboard.storyboard in Resources */,
+				C3453E5A1618F54D00401EAB /* wordsBig in Resources */,
+				C3453E5B1618F54D00401EAB /* wordsMedium in Resources */,
+				C3453E5C1618F54D00401EAB /* wordsSmall in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
