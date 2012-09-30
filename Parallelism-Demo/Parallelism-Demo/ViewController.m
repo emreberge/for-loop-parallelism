@@ -16,30 +16,48 @@
 
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UITextView *outputTextView;
-
 @end
 
 @implementation ViewController
-
-- (void)viewDidLoad
 {
-    [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    NSString *_currentFile;
+    NSArray *_words;
 }
 
-- (void)didReceiveMemoryWarning
+- (IBAction)runSmall:(id)sender
 {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    _currentFile = @"wordsSmall";
+    [self findPalindromicWords];
 }
 
-- (IBAction)runSmall:(id)sender {
+- (IBAction)runMedium:(id)sender
+{
+    _currentFile = @"wordsMedium";
+    [self findPalindromicWords];
 }
 
-- (IBAction)runMedium:(id)sender {
+- (IBAction)runLarge:(id)sender
+{
+    _currentFile = @"wordsBig";
+    [self findPalindromicWords];
 }
 
-- (IBAction)runLarge:(id)sender {
+- (void)findPalindromicWords
+{
+    [self loadWords];
+
+}
+
+- (void)loadWords
+{
+    NSString *filePath = [[NSBundle mainBundle] pathForResource:_currentFile ofType:@""];
+    NSString *fileContent = [NSString stringWithContentsOfFile:filePath encoding:NSUTF8StringEncoding error:nil];
+    self.outputTextView.text = fileContent;
+    NSMutableArray *words = [NSMutableArray array];
+    [fileContent enumerateLinesUsingBlock:^(NSString *word, BOOL *stop) {
+        [words addObject:word];
+    }];
+    _words = [words copy];
 }
 
 
