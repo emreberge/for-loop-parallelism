@@ -15,6 +15,7 @@
 #import "ViewController.h"
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet UITextView *outputTextView;
 
 @end
 
@@ -31,5 +32,15 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+- (IBAction)runSmall:(id)sender {
+}
+
+- (IBAction)runMedium:(id)sender {
+}
+
+- (IBAction)runLarge:(id)sender {
+}
+
 
 @end
