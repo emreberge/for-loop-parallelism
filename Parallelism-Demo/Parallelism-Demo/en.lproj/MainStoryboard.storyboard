@@ -13,18 +13,18 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mJw-m2-Fzl">
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="403" id="ne2-Ey-QAe"/>
-                                </constraints>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="26F-pm-4wi">
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="65" id="Bji-GH-kXz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
                                 <state key="normal" title="Small">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <state key="highlighted">
@@ -35,9 +35,12 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DJL-j3-pgO">
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="81" id="E7a-mH-IKN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
                                 <state key="normal" title="Medium">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <state key="highlighted">
@@ -48,9 +51,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ixR-KY-Wwf">
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
                                 <state key="normal" title="Large">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <state key="highlighted">
@@ -60,26 +63,35 @@
                                     <action selector="runLarge:" destination="2" eventType="touchUpInside" id="FwR-mt-vZh"/>
                                 </connections>
                             </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="VOd-rG-UvV">
+                                <segments>
+                                    <segment title="Sequentially"/>
+                                    <segment title="Concurrently"/>
+                                </segments>
+                                <color key="tintColor" red="0.49089296519671555" green="0.47911640930580868" blue="0.49160810406698563" alpha="1" colorSpace="calibratedRGB"/>
+                            </segmentedControl>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.95728140758982372" green="0.93431616099010939" blue="0.95867598684210531" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="VOd-rG-UvV" firstAttribute="centerX" secondItem="DJL-j3-pgO" secondAttribute="centerX" type="default" id="B0c-dt-ZPD"/>
                             <constraint firstAttribute="bottom" secondItem="mJw-m2-Fzl" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="BhC-H9-l5f"/>
+                            <constraint firstItem="ixR-KY-Wwf" firstAttribute="baseline" secondItem="DJL-j3-pgO" secondAttribute="baseline" type="default" id="Mtr-zx-666"/>
+                            <constraint firstAttribute="trailing" secondItem="VOd-rG-UvV" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="PH7-7V-po6"/>
+                            <constraint firstItem="VOd-rG-UvV" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="QmQ-dE-Mcd"/>
                             <constraint firstItem="26F-pm-4wi" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="TRG-2e-38p"/>
+                            <constraint firstItem="mJw-m2-Fzl" firstAttribute="top" secondItem="26F-pm-4wi" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="UW8-4o-JWF"/>
                             <constraint firstAttribute="trailing" secondItem="mJw-m2-Fzl" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="b5m-jU-FRP"/>
+                            <constraint firstItem="DJL-j3-pgO" firstAttribute="baseline" secondItem="26F-pm-4wi" secondAttribute="baseline" type="default" id="fJG-dT-0Mb"/>
                             <constraint firstAttribute="trailing" secondItem="ixR-KY-Wwf" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="fat-ey-VME"/>
-                            <constraint firstItem="26F-pm-4wi" firstAttribute="baseline" secondItem="ixR-KY-Wwf" secondAttribute="baseline" type="default" id="fbg-UB-ojG"/>
-                            <constraint firstItem="DJL-j3-pgO" firstAttribute="centerX" secondItem="mJw-m2-Fzl" secondAttribute="centerX" type="default" id="gdv-Az-5gu"/>
-                            <constraint firstItem="26F-pm-4wi" firstAttribute="top" secondItem="3" secondAttribute="top" constant="20" symbolic="YES" type="default" id="nX3-PR-yCI"/>
+                            <constraint firstItem="VOd-rG-UvV" firstAttribute="top" secondItem="3" secondAttribute="top" constant="20" symbolic="YES" type="default" id="hfr-gR-XKb"/>
                             <constraint firstItem="mJw-m2-Fzl" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="oVu-hJ-gOI"/>
-                            <constraint firstItem="DJL-j3-pgO" firstAttribute="baseline" secondItem="ixR-KY-Wwf" secondAttribute="baseline" type="default" id="rEw-Uy-hdG"/>
-                            <constraint firstItem="26F-pm-4wi" firstAttribute="baseline" secondItem="DJL-j3-pgO" secondAttribute="baseline" type="default" id="uPA-3S-eKU"/>
-                            <constraint firstItem="ixR-KY-Wwf" firstAttribute="top" secondItem="3" secondAttribute="top" constant="20" symbolic="YES" type="default" id="vv3-mS-J4h"/>
-                            <constraint firstItem="DJL-j3-pgO" firstAttribute="top" secondItem="3" secondAttribute="top" constant="20" symbolic="YES" type="default" id="wNa-QR-N1n"/>
+                            <constraint firstItem="26F-pm-4wi" firstAttribute="top" secondItem="VOd-rG-UvV" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="uaC-Oi-XCr"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="For Loop Parallelism" id="SAz-Vo-6rx"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="blackOpaque" prompted="NO"/>
                     <connections>
+                        <outlet property="coreChooser" destination="VOd-rG-UvV" id="mWS-uo-dCy"/>
                         <outlet property="outputTextView" destination="mJw-m2-Fzl" id="8sN-w4-vKI"/>
                     </connections>
                 </viewController>
@@ -113,6 +125,7 @@
         <class className="ViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
             <relationships>
+                <relationship kind="outlet" name="coreChooser" candidateClass="UISegmentedControl"/>
                 <relationship kind="outlet" name="outputTextView" candidateClass="UITextView"/>
             </relationships>
         </class>
